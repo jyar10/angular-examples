@@ -1,0 +1,17 @@
+/* styles.css */
+
+header {
+  background: #f0f0f0;
+  padding: 1rem;
+}
+
+main {
+  flex-grow: 1;
+  padding: 1rem;
+  background: #ffffff;
+}
+
+footer {
+  background: #f0f0f0;
+  padding: 1rem;
+}

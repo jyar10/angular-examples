@@ -1,10 +1,10 @@
 import { Routes } from '@angular/router';
-import { Shell } from './shell/shell';
+import { Home } from '../components/home/home';
 
 export const routes: Routes = [
     {
         path: '',
-        component: Shell,
+        component: Home,
         title: 'Home'
     },
 ];
