@@ -1,0 +1,23 @@
+<h2>📅 Event Management Dashboard</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Event</th>
+      <th>Date</th>
+      <th>Attendees</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let event of upcomingEvents">
+      <td>{{ event.name }}</td>
+      <td>{{ event.date }}</td>
+      <td>{{ event.attendees }}</td>
+      <td>
+        <span class="badge" [ngClass]="event.status.toLowerCase()">{{ event.status }}</span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+

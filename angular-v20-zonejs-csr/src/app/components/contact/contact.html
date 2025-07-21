@@ -1,0 +1,27 @@
+<h2>Contact Me</h2>
+
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+  <label>
+    Name:
+    <input type="text" formControlName="name" />
+    <div class="error" *ngIf="nameTouchedAndInvalid">Name is required.</div>
+  </label>
+
+  <label>
+    Email:
+    <input type="email" formControlName="email" />
+    <div class="error" *ngIf="emailTouchedAndInvalid">Enter a valid email.</div>
+  </label>
+
+  <label>
+    Message:
+    <textarea formControlName="message" rows="4"></textarea>
+    <div class="error" *ngIf="messageTouchedAndInvalid">Message is required.</div>
+  </label>
+
+  <button type="submit" [disabled]="contactForm.invalid">Send</button>
+</form>
+
+<div class="confirmation" *ngIf="showConfirmation">
+  Message sent! I’ll get back to you soon.
+</div>

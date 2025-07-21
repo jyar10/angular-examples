@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { Home } from '../components/home/home';
+import { RouterModule, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-shell',
-  imports: [Home],
+  imports: [RouterModule, RouterOutlet],
   templateUrl: './shell.html',
   styleUrl: './shell.css'
 })

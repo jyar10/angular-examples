@@ -2,14 +2,14 @@
   <div class="container">
     <h1 class="logo">MyApp</h1>
     <nav class="nav">
-      <a href="#">Home</a>
-      <a href="#">Features</a>
-      <a href="#">Contact</a>
+      <a [routerLink]="['/']">Home</a>
+      <a [routerLink]="['/dashboard']">Dashboard</a>
+       <a [routerLink]="['/contact']">Contact</a>
     </nav>
   </div>
 </header>
 <main>
-<app-home></app-home>
+<router-outlet/>
 </main>
 <footer class="footer">
   <div class="container">
