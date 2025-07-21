@@ -21,7 +21,6 @@ export class Contact {
     });
   }
 
-  // 🔍 Extracted getter logic
   get nameTouchedAndInvalid(): boolean {
     const control = this.contactForm.get('name');
     return !!(control?.touched && control.invalid);
