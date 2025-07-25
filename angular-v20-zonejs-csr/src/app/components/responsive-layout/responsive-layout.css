@@ -36,10 +36,6 @@
 }
 
 .toggle-btn {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  z-index: 110;
   background: #2c3e50;
   color: white;
   padding: 8px 12px;
