@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { ResponsiveLayout } from '../responsive-layout/responsive-layout';
 
 
 @Component({
   selector: 'app-dashboard',
-  imports: [CommonModule],
+  imports: [CommonModule, ResponsiveLayout],
   templateUrl: './dashboard.html',
   styleUrl: './dashboard.css'
 })

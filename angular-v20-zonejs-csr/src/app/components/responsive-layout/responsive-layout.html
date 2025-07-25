@@ -1,0 +1,23 @@
+<button *ngIf="isMobile()" (click)="sidebarOpen.set(true)" class="toggle-btn">
+  ☰ Menu
+</button>
+
+<div class="layout" [ngStyle]="{ 'flex-direction': layoutDirection() }">
+  <aside 
+    *ngIf="!isMobile() || sidebarOpen()" 
+    class="sidebar" 
+    [ngClass]="{ 'overlay': isMobile(), 'visible': sidebarOpen() }">
+    <button *ngIf="isMobile()" (click)="sidebarOpen.set(false)">✕ Close</button>
+    Sidebar Content
+  </aside>
+
+  <div 
+    *ngIf="isMobile() && sidebarOpen()" 
+    class="backdrop" 
+    (click)="sidebarOpen.set(false)">
+  </div>
+
+  <main class="content">
+    Main Content
+  </main>
+</div>
