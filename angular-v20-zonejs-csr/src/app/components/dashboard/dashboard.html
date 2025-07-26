@@ -21,4 +21,15 @@
   </tbody>
 </table>
 
+<app-graph
+  [series]="[
+    { name: 'Revenue', data: [100, 200, 300, 400] }
+  ]"
+  [chartOptions]="{
+    chart: { type: 'line' },
+    xaxis: { categories: ['Q1', 'Q2', 'Q3', 'Q4'] }
+  }">
+</app-graph>
+
+
 <app-responsive-layout/>
